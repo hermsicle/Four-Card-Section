@@ -45,10 +45,13 @@ body {
 }
 .container h2 {
     font-size: 1.25rem;
+    font-weight: 400;
+    color: hsl(234, 12%, 34%);
 }
 .container p {
     font-size: 15px;
     font-weight: 200;
+    color:  hsl(229, 6%, 66%);
 }
 .container img {
     position: absolute;
@@ -71,6 +74,19 @@ body {
 
 
 @media (min-width: 1200px) {
+    .title-container {
+        /* border: 1px solid pink; */
+        width: 500px;
+    }
+    .title-1,
+    .title-2 {
+        font-size: 2rem;
+        position: relative;
+        text-align: center;
+    }
+    .title-container p {
+        margin-top: 1rem;
+    }
     .main-container {
         /* border: 1px solid orange; */
         position: relative;
