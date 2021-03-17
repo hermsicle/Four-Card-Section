@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background: hsl(0, 0%, 98%);
+}
+
+.title-container {
+    /* border: 1px solid black; */
+    width: 300px;
+    margin: 90px auto 75px auto;
+}
+.title-1 {
+    font-weight: 200;
+    font-size: 1.5rem;
+    color:  hsl(229, 6%, 66%);
+}
+.title-2 {
+    font-weight: 600;
+    font-size: 1.5rem;
+    color:  hsl(234, 12%, 34%);
+}
+.title-container p {
+    font-weight: 200;
+    text-align: center;
+    font-size: 15px;
+    color:  hsl(229, 6%, 66%);
+}
+.container {
+    width: 300px;
+    height: 225px;
+    margin: 0 auto 22px auto;
+    /* border: 1px solid orange; */
+    padding: 1rem;
+    position: relative;
+    background: white;
+    border-radius: 0.25rem;
+    box-shadow: 0px 10px 15px hsl(229, 6%, 66%);
+}
+.container h2 {
+    font-size: 1.25rem;
+}
+.container p {
+    font-size: 15px;
+    font-weight: 200;
+}
+.container img {
+    position: absolute;
+    right: 25px;
+    bottom: 27px;
+    /* border: 1px solid green; */
+}
+.container.one {
+    border-top: 5px solid  hsl(180, 62%, 55%);
+}
+.container.two {
+    border-top: 5px solid  hsl(0, 78%, 62%);
+}
+.container.three {
+    border-top: 5px solid  hsl(34, 97%, 64%);
+}
+.container.four {
+    border-top: 5px solid  hsl(212, 86%, 64%);
+}
+
+
+@media (min-width: 1200px) {
+    .main-container {
+        /* border: 1px solid orange; */
+        position: relative;
+        max-width: 1100px;
+        /* height: 538px; */
+        margin: 0 auto;
+        display: grid;
+        grid-template: 225px 225px / 1fr 1fr 1fr;
+        grid-template-areas: 
+            "cyan red blue"
+            "cyan yellow blue";
+        grid-gap: 25px;
+    }
+    .container {
+        margin: 0 1rem 0 1rem;
+    }
+    .container.one {
+        grid-area: cyan;
+        top: 50%;
+        left: 50px;
+        transform: translateY(-50%);
+    }
+    .container.two {
+        grid-area: red;
+    }
+    .container.three {
+        grid-area: yellow;
+        position: absolute;
+        /* margin-top: 25px; */
+    }
+    .container.four {
+        grid-area: blue;
+        top: 50%;
+        right: 50px;
+        transform: translateY(-50%);
+    }
+
+}
